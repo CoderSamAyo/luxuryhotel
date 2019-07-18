@@ -40,7 +40,37 @@
 .text-block h4{
   color: #fff;
 }
+
   </style>
+
+   <script type="application/ld+json">
+{
+   "@context" : "http://schema.org",
+   "aggregateRating" : {
+      "@type" : "AggregateRating",
+      "bestRating" : 5,
+      "reviewCount" : 184,
+      "ratingValue" : 4.5
+   },
+   "name" : "The Statement Hotel",
+   "priceRange" : "N18,000 - N90,000",
+   "url" : "http://statementhotel.com",
+   "hasMap" : "",
+   "image" : "http://statementhotel.com/images/pool/66.jpg",
+   "description" : "",
+   "@type" : "Hotel",
+   "address" : {
+      "streetAddress" : "Plot 1002 1st Avenue, By Shehu Shagari Way, Beside Federal High Court Headquaters",
+      "postalCode" : "",
+      "addressRegion" : "Central Business District",
+      "addressLocality" : "Abuja",
+      "@type" : "PostalAddress",
+      "addressCountry" : "Nigeria",
+      "telephone" : "+234.0706-815-1023"
+   }
+}
+</script>    <!-- Global site tag (gtag.js) - Google Analytics -->
+
 
   </head>
   <body>
@@ -106,10 +136,18 @@
             <div class="row justify-content-center" >
               <div class="col-md-auto">
                 <nav class=" breadcrumb_white text-center">
-                  <ol class="breadcrumb justify-content-center"  >
-                    <li class="breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="index.html">&nbsp;Home &nbsp;</a></li>
-                      <span class="breadcrump_slash">/</span>
-                    <li class="breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="rooms.html">&nbsp;Facilities &nbsp;</a></li>
+                  <ol class="breadcrumb justify-content-center" itemscope itemtype="https://schema.org/BreadcrumbList" >
+                    <li class="breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="index.html" itemtype="https://schema.org/Thing"
+       itemprop="item"><span itemprop="name">&nbsp;Home &nbsp;</span></a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                      
+                    <li class="breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="rooms.html" itemtype="https://schema.org/Thing"
+       itemprop="item">&<span itemprop="name">&nbsp;Facilities &nbsp;<span></a>
+                        <meta itemprop="position" content="2" />
+                    </li>
                       
                   </ol>
                 </nav>
@@ -140,7 +178,7 @@
           <div class="col-md-6">
             <div class="row">
             <div>
-              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg">  <div class="text-block"> 
+              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg" alt="italian restaurant" title="italian restaurant">  <div class="text-block"> 
               <h4>Italian Restaurant</h4>
             </div>
               </div>
@@ -155,7 +193,7 @@
             </div>
             <div class="row mt-4">
               <div>
-              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/reception/74.jpg">  <div class="text-block"> 
+              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/reception/74.jpg" alt="hotel reception" title="hotel reception">  <div class="text-block"> 
               <h4>Spacious Reception</h4>
             </div>
               </div>
@@ -172,7 +210,7 @@
           <div class="col-md-6">
             <div class="row">
               <div>
-              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/90.jpg">  <div class="text-block"> 
+              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/90.jpg" alt="hotel retaurant" title="hotel retaurant">  <div class="text-block"> 
               <h4>Ruthy Signature</h4>
             </div>
               </div>
@@ -186,7 +224,7 @@
             </div>
             <div class="row mt-4">
               <div>
-              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/pool/69.jpg">  <div class="text-block"> 
+              <div class="col-md-12" style="position: relative;"><img class="img-fluid" src="http://www.statementhotel.com/images/pool/69.jpg" alt="swimming pool" title="swimming pool">  <div class="text-block"> 
               <h4>The Pool</h4>
             </div>
               </div>

@@ -25,6 +25,51 @@
   <!-- Custom stlylesheet -->
   <link type="text/css" rel="stylesheet" href="assets/css/404.css"/>
 
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "The Statement hotel",
+  "image" : "images/ft-logo.png",
+  "telephone" : "+234.0706-815-1023",
+  "email" : "booking@statementhotel.com",
+  "priceRange" : "N30,000 - N80,000",
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "Plot 1002 1st Avenue",
+    "addressLocality" : "By Shehu Shagari Way, Central Business District",
+    "addressRegion" : "Abuja"
+  },
+  "aggregateRating" : {
+    "@type" : "AggregateRating",
+    "ratingValue" : "4",
+    "bestRating" : "5",
+    "worstRating" : "3",
+    "ratingCount" : "74"
+  }
+  
+}
+</script>
+  
+
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "statementhotel.com",
+  "logo": "images/ft-logo.png",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+234.0706-815-1023",
+    "contactType": "customer service"
+  }]
+
+
+}
+</script>
+
+  
+
   </head>
   <body>
 
@@ -33,7 +78,7 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-light">
         <div class="container">
               <a class="navbar-brand" href="index.html">
-              <img src="images/ft-logo.png" width="200" height="120" class="d-inline-block align-top" alt="The Statement hotel logo">
+              <img src="images/ft-logo.png" width="200" height="120" class="d-inline-block align-top" alt="The Statement hotel logo" title="The Statement hotel logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -89,12 +134,24 @@
             <div class="row justify-content-center" >
               <div class="col-md-auto">
                 <nav class=" breadcrumb_white text-center">
-                  <ol class="breadcrumb" >
-                    <li class="breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="index.html">&nbsp;Home &nbsp;</a></li>
-                      <span class="breadcrump_slash">/</span>
-                    <li class="breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="rooms.html">&nbsp;Rooms &nbsp;</a></li>
-                      <span class="breadcrump_slash">/</span>
-                    <li class=" breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="room2.html">&nbsp;Contact Us</a></li>
+                  <ol class="breadcrumb"itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="index.html" itemtype="https://schema.org/Thing"
+       itemprop="item"><span itemprop="name">&nbsp;Home &nbsp;</span></a>
+                        <meta itemprop="position" content="1" />
+                      </li>
+                      
+                    <li class="breadcrumb_for_list_Items" class="breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="rooms.html" itemtype="https://schema.org/Thing"
+       itemprop="item">&<span itemprop="name">&nbsp;Rooms &nbsp;</span></a>
+                        <meta itemprop="position" content="2" />
+                      </li>
+                      
+                    <li class=" breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="room2.html" itemtype="https://schema.org/Thing"
+       itemprop="item"><span itemprop="name">&nbsp;Contact Us</span></a>
+                         <meta itemprop="position" content="3" />
+                    </li>
                   </ol>
                 </nav>
               </div>

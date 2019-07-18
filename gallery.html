@@ -25,6 +25,35 @@
   <!-- Custom stlylesheet -->
   <link type="text/css" rel="stylesheet" href="assets/css/404.css"/>
 
+   <script type="application/ld+json">
+    {
+       "@context" : "http://schema.org",
+       "aggregateRating" : {
+          "@type" : "AggregateRating",
+          "bestRating" : 5,
+          "reviewCount" : 184,
+          "ratingValue" : 4.5
+       },
+       "name" : "The Statement Hotel",
+       "priceRange" : "N18,000 - N90,000",
+       "url" : "http://statementhotel.com",
+       "hasMap" : "",
+       "image" : "http://statementhotel.com/images/pool/66.jpg",
+       "description" : "",
+       "@type" : "Hotel",
+       "address" : {
+          "streetAddress" : "Plot 1002 1st Avenue, By Shehu Shagari Way, Beside Federal High Court Headquaters",
+          "postalCode" : "",
+          "addressRegion" : "Central Business District",
+          "addressLocality" : "Abuja",
+          "@type" : "PostalAddress",
+          "addressCountry" : "Nigeria",
+          "telephone" : "+234.0706-815-1023"
+       }
+    }
+</script>    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
   </head>
   <body>
 
@@ -33,7 +62,7 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-light">
         <div class="container">
               <a class="navbar-brand" href="index.html">
-              <img src="images/ft-logo.png" width="200" height="120" class="d-inline-block align-top" alt="The Statement hotel logo">
+              <img src="images/ft-logo.png" width="200" height="120" class="d-inline-block align-top" alt="The Statement hotel logo" title="The Statement hotel logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -89,10 +118,18 @@
             <div class="row justify-content-center" >
               <div class="col-md-auto">
                 <nav class=" breadcrumb_white text-center">
-                  <ol class="breadcrumb justify-content-center"  >
-                    <li class="breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="index.html">&nbsp;Home &nbsp;</a></li>
-                      <span class="breadcrump_slash">/</span>
-                    <li class="breadcrumb_for_list_Items"><a class='breadcrumb_icon' href="rooms.html">&nbsp;Gallery &nbsp;</a></li>
+                  <ol class="breadcrumb justify-content-center"  itemscope itemtype="https://schema.org/BreadcrumbList"  >
+                    <li class="breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="index.html" itemtype="https://schema.org/Thing"
+       itemprop="item"><span itemprop="name">&nbsp;Home &nbsp;</span></a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                
+                    <li class="breadcrumb_for_list_Items" lass="breadcrumb_for_list_Items" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a class='breadcrumb_icon' href="rooms.html" itemtype="https://schema.org/Thing"
+       itemprop="item">&<span itemprop="name">&nbsp;Gallery &nbsp;</span></a>
+                        <meta itemprop="position" content="2" />
+                    </li>
                       
                   </ol>
                 </nav>
@@ -112,16 +149,16 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-                  <div class=""><img class="img-fluid" src="http://www.statementhotel.com/images/classic-room/6.jpg"></div>
+                  <div class=""><img class="img-fluid" src="http://www.statementhotel.com/images/classic-room/6.jpg" alt="classic suites" title="classic suites"></div>
             </div>
             <div class="col-md-6">
                   <div class="row">
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/91.jpg"></div>
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg"></div>
+                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/91.jpg" alt="hotel restaurant" title="hotel restaurant"></div>
+                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg" alt="taverna restaurant" title="taverna restaurant"></div>
                   </div>
                   <div class="row mt-4">
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/85.jpg"></div>
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/business-suite/32.jpg"></div>
+                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/85.jpg" alt="hotel restaurant" title="hotel restaurant"></div>
+                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/business-suite/32.jpg" alt="business-suite" title="business-suite"></div>
                   </div>
             </div>
           </div>
@@ -131,16 +168,16 @@
             <div class="row mt-4">
               <div class="col-md-6">
                       <div class="row">
-                       <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/classic-room/6.jpg"></div>
-                      <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/91.jpg"></div>
+                       <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/classic-room/6.jpg" alt="classic-room" title="classic-room"></div>
+                      <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/91.jpg " alt="hotel restaurant" title="hotel restaurant"></div>
                     </div>
                     <div class="row mt-4">
-                      <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/85.jpg"></div>
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/business-suite/32.jpg"></div>
+                      <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/85.jpg" alt="hotel restaurant" title="hotel restaurant"></div>
+                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/business-suite/32.jpg" alt="business suite" title="business suite"></div>
                     </div>
               </div>
               <div class="col-md-6">
-                    <div class=""><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg"></div>
+                    <div class=""><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg" alt="taverna restaurant" title="taverna restaurant"></div>
               </div>
               
             </div>          
@@ -149,16 +186,16 @@
         <div class="container mt-4">
           <div class="row">
             <div class="col-md-6">
-                  <div class=""><img class="img-fluid" src="http://www.statementhotel.com/images/classic-room/6.jpg"></div>
+                  <div class=""><img class="img-fluid" src="http://www.statementhotel.com/images/classic-room/6.jpg" alt="classic suite" title="classic suite"></div>
             </div>
             <div class="col-md-6">
                   <div class="row">
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/91.jpg"></div>
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/taverna/44.jpg"></div>
+                    <div class="col-md-6"><img class="img-fluid"  alt="hotel restaurant" title="hotel restaurant" src="http://www.statementhotel.com/images/restaurant/91.jpg"></div>
+                    <div class="col-md-6"><img class="img-fluid" alt="taverna restaurant" title="taverna restaurant" src="http://www.statementhotel.com/images/taverna/44.jpg"></div>
                   </div>
                   <div class="row mt-4">
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/restaurant/85.jpg"></div>
-                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/business-suite/32.jpg"></div>
+                    <div class="col-md-6"><img class="img-fluid" alt="hotel restaurant" title="hotel restaurant" src="http://www.statementhotel.com/images/restaurant/85.jpg"></div>
+                    <div class="col-md-6"><img class="img-fluid" src="http://www.statementhotel.com/images/business-suite/32.jpg" alt="business suite" title="business suite"></div>
                   </div>
             </div>
           </div>
